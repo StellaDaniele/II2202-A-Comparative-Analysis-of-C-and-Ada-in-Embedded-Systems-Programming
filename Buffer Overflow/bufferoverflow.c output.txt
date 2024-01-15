@@ -1,0 +1,13 @@
+ii2202@usr:/home $ gcc bufferoverflow.c
+bufferoverflow.c: In function ‘main’:
+bufferoverflow.c:6:5: warning: ‘__builtin_memcpy’ writing 27 bytes into a
+region of size 10 overflows the destination [-Wstringop-overflow=]
+    6 |     strcpy(buffer, "This is a buffer overflow!");
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bufferoverflow.c:5:10: note: destination object ‘buffer’ of size 10
+    5 |     char buffer[10];
+      |          ^~~~~~
+
+
+ii2202@usr:/home $ ./a.out
+This is a buffer overflow!

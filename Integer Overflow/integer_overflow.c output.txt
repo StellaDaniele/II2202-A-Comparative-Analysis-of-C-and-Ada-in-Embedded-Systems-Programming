@@ -1,0 +1,5 @@
+ii2202@usr:/home $ gcc -Wall -Wextra integer_overflow.c
+
+
+ii2202@usr:/home $ ./a.out
+The value of a is: -2147483648

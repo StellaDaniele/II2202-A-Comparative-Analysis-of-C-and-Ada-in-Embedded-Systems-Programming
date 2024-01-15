@@ -1,0 +1,5 @@
+ii2202@usr:/home $ gcc -Wall -Wextra race_condition.c
+
+
+ii2202@usr:/home $ ./a.out
+Final value of the shared counter: 99897

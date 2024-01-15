@@ -1,0 +1,6 @@
+ii2202@usr:/home $ gcc -Wall -Wextra deadlock.c
+
+
+ii2202@usr:/home $ timeout 3 ./a.out
+Thread 1: Acquired mutex1
+Thread 2: Acquired mutex2

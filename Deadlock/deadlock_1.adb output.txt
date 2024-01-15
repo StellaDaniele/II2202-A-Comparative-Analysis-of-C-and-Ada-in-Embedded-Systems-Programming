@@ -1,0 +1,14 @@
+ii2202@usr:/home $ gnatmake deadlock.adb
+aarch64-linux-gnu-gcc-12 -c deadlock.adb
+aarch64-linux-gnu-gnatbind-12 -x deadlock.ali
+aarch64-linux-gnu-gnatlink-12 deadlock.ali
+
+
+ii2202@usr:/home $ ./deadlock
+Task_A started
+Task_B started
+Task_A waiting for Task_B to release the resource
+Task_A continues after getting the resource
+Task_B waiting for Task_A to release the resource
+Task_B continues after getting the resource
+Deadlock reached

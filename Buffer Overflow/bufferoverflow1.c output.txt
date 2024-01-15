@@ -1,0 +1,6 @@
+ii2202@usr:/home $ gcc bufferoverflow1.c
+
+
+ii2202@usr:/home $ ./a.out
+Enter the buffer size: 10
+This is a buffer overflow!

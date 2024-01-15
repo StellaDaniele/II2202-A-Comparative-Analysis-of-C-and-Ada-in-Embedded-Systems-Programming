@@ -1,0 +1,5 @@
+ii2202@usr:/home $ gcc -Wall -Wextra divide0.c
+
+
+ii2202@usr:/home $ ./a.out 2 0
+2/0=0

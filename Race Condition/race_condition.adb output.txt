@@ -1,0 +1,8 @@
+ii2202@usr:/home $ gnatmake race_condition.adb
+aarch64-linux-gnu-gcc-12 -c race_condition.adb
+aarch64-linux-gnu-gnatbind-12 -x race_condition.ali
+aarch64-linux-gnu-gnatlink-12 race_condition.ali
+
+
+ii2202@usr:/home $ ./race_condition
+Final value of the shared counter:  15205

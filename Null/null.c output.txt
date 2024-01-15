@@ -1,0 +1,5 @@
+ii2202@usr:/home $ gcc -Wall -Wextra null.c
+
+
+ii2202@usr:/home $ ./a.out
+Segmentation fault

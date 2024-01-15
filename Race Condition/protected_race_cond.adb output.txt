@@ -1,0 +1,8 @@
+ii2202@usr:/home $ gnatmake protected_race_cond.adb
+aarch64-linux-gnu-gcc-12 -c protected_race_cond.adb
+aarch64-linux-gnu-gnatbind-12 -x protected_race_cond.ali
+aarch64-linux-gnu-gnatlink-12 protected_race_cond.ali
+
+
+ii2202@usr:/home $ ./protected_race_cond
+Final value of the shared counter:  100000

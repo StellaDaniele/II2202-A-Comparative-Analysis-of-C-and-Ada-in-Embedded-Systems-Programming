@@ -1,0 +1,12 @@
+ii2202@usr:/home gnatmake divide0.adb
+aarch64-linux-gnu-gcc-12 -c divide0.adb
+divide0.adb:7:16: warning: division by zero [enabled by default]
+divide0.adb:7:16: warning: Constraint_Error will be raised at run time
+[enabled by default]
+aarch64-linux-gnu-gnatbind-12 -x divide0.ali
+aarch64-linux-gnu-gnatlink-12 divide0.ali
+
+
+ii2202@usr:/home $ ./divide0
+
+raised CONSTRAINT_ERROR : divide0.adb:7 divide by zero
